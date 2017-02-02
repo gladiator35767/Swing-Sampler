@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.util.Scanner;
 
 import javax.swing.*;
 //COMMENT CMOMENT COMMENT CMOMENT
@@ -15,14 +16,14 @@ public class MyCanvas extends Canvas
 	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	        frame.getContentPane().add(canvas).setBackground(Color.white);
 	        frame.setLocationRelativeTo(null); //Sets JPanel to center of screen 
-	        frame.setResizable(false);
+	        frame.setResizable(true);
 	        frame.setVisible(true);
     		}
  
     	public void paint(Graphics graphics) 
     		{
     			        
-            graphics.setColor(Color.black);
+          graphics.setColor(Color.black);
 	        graphics.drawLine(500, 0, 0, 500);
 	        
 	        graphics.setColor(Color.black);
@@ -52,10 +53,9 @@ public class MyCanvas extends Canvas
     		graphics.setColor(Color.white);
     		graphics.fillOval(200, 450, 400, 100);
     		
+    		}
     		
     		
-    		
-    			
     		
     			
 	        
@@ -69,7 +69,7 @@ public class MyCanvas extends Canvas
 //		        graphics.setColor(Color.white);
 //		        graphics.fillRect(300, i, 50, 50);
 //	        	}
-    		}
+    		
     	
     		public void delay()
     			{
